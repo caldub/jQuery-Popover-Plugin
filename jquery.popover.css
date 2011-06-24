@@ -1,0 +1,103 @@
+.popover-wrap {
+	display: none;
+	position: absolute;
+}
+
+.popover {
+	z-index: 1000;
+	width: 250px;
+	padding: 10px;
+	background: #f1f1f1;
+	position: relative;
+	border: 1px solid #999;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 3px #aaa;
+	-moz-box-shadow: 0 1px 3px #aaa;
+	box-shadow: 0 1px 3px #aaa;
+}
+
+.popover:before {
+	position: absolute;
+	content: '';
+	top: -14px;
+	left: 120px;
+	height: 14px;
+	width: 32px;
+	background: url('arrow.png') no-repeat 0 0;
+}
+
+.popover h3.popover-title {
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	margin: 0 0 4px;
+}
+
+.popover .popover-content {
+	margin: 0 0 10px;
+}
+
+.popover ul {
+	width: 100%;
+	margin: 0;
+}
+
+.popover li {
+	list-style: none;
+	margin: 0 000 1px;
+}
+
+.popover li a {
+	display: block;
+	line-height: 1.5em;
+	padding: 0 10px;
+	background: #ccc;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	color: #000;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.popover li a:hover {
+	background: #cce4e7;
+}
+
+.popover a.close {
+	font-size: 22px;
+	line-height: .5;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	color: #aaa;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none !important;
+	-webkit-transition: all .15s ease;
+	-moz-transition: all .15s ease;
+	transition: all .15s ease;
+}
+
+.popover a.close:hover {
+	color: #666;
+}
+
+.popover a.close:active {
+	bottom: 9px;
+	color: #333;
+}
+
+#popover-bg {
+	position: fixed;
+	background: #000;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	display: none;
+	top: 0;
+	left: 0;
+}
